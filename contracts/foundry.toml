@@ -1,0 +1,22 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+cache_path = "cache"
+broadcast = "broadcast"
+libs = ["lib"]
+fs_permissions = [{ access = "read", path = "./foundry.toml"}]
+
+[rpc_endpoints]
+interop-alpha-0="https://interop-alpha-0.optimism.io"
+interop-alpha-1="https://interop-alpha-1.optimism.io"
+
+[profile.salt]
+salt = "0x0000000000000000000000000000000000000000000000000000000000000010"
+
+[profile.supported_chains]
+supported_chains = [420120000, 420120001]
+
+[profile.create2]
+address = "0x900c87c5455c158622EE3Dde90E825c80085F345"

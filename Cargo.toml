@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["crates/bindings"]
+
+[workspace.dependencies]
+trivane-contracts = { path = "crates/bindings" }
+
+[profile.release]
+opt-level = 3
